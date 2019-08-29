@@ -1,0 +1,62 @@
+#banner {
+    height: 90vh;
+    margin-top: 5vh;
+    background: url(https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+#tile {
+    margin: 0 auto;
+    padding: 30px;
+}
+
+#tileContent {
+    width: 45vw;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+#pantryList {
+    max-height: 59vh;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+} 
+
+#title {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow:  7px 7px 10px 10px white;
+    text-shadow: 4px 4px 6px gray;
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#card {
+    height: 75vh;
+    background: rgba(255, 255, 255, 0.9);
+    
+}
+
+.input {
+    text-align: right;
+  
+}
+
+.panel-block {
+    height: 6vh;
+}
+
+
+footer {
+    width: 100%;
+    margin: 0 auto;
+    color: black;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    font-weight: bold;
+    text-align: center;
+}
