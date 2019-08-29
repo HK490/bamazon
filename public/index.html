@@ -30,47 +30,50 @@
                         </div>
                         <p id="preferenceList">
                             <label class="panel-block">
-                                <input style="width:95px" class="input" type="text" placeholder="How Many">
+                                <input id="herbReq" style="width:95px" id="herbal" class="input" type="text" placeholder="$5/Bottle">
                                 Herbal Essence
                             </label>
                             <label class="panel-block">
-                                <input style="width:95px" class="input" type="text" placeholder="How Many">
+                                <input id="doveReq" style="width:95px" id="dove" class="input" type="text" placeholder="$5/Bottle">
                                 Dove
                             </label>
                             <label class="panel-block">
-                                <input style="width:95px" class="input" type="text" placeholder="How Many">
+                                <input id="tresReq" style="width:95px" id="tresemme" class="input" type="text"
+                                    placeholder="$5/Bottle">
                                 Tresemme
                             </label>
                             <label class="panel-block">
-                                <input style="width:95px" class="input" type="text" placeholder="How Many">
+                                <input id="lorReq" style="width:95px" id="loreal" class="input" type="text" placeholder="$5/Bottle">
                                 Loreal
                             </label>
                             <label class="panel-block">
-                                <input style="width:95px" class="input" type="text" placeholder="How Many">
+                                <input id="pantReq" style="width:95px" id="pantene" class="input" type="text"
+                                    placeholder="$5/Bottle">
                                 pantene
                             </label>
                             <label class="panel-block">
-                                <input style="width:95px" class="input" type="text" placeholder="How Many">
+                                <input id="hdReq" style="width:95px" id="hS" class="input" type="text" placeholder="$5/Bottle">
                                 Head & Shoulder
                             </label>
                             <label class="panel-block">
-                                <input style="width:95px" class="input" type="text" placeholder="How Many">
+                                <input id="garnReq" style="width:95px" id="garnier" class="input" type="text"
+                                    placeholder="$5/Bottle">
                                 Garnier
                             </label>
                             <label class="panel-block">
-                                <input style="width:95px" class="input" type="text" placeholder="How Many">
+                                <input id="bioReq" style="width:95px" id="bio" class="input" type="text" placeholder="$5/Bottle">
                                 Biolage
                             </label>
                             <label class="panel-block">
-                                <input style="width:95px" class="input" type="text" placeholder="How Many">
+                                <input id="nexReq" style="width:95px" id="nexxus" class="input" type="text" placeholder="$5/Bottle">
                                 Nexxus
                             </label>
                             <label class="panel-block">
-                                <input style="width:95px" class="input" type="text" placeholder="How Many">
+                                <input id="joReq" style="width:95px" id="joico" class="input" type="text" placeholder="$5/Bottle">
                                 Joico
                             </label>
                             <div class="panel-block">
-                                <button class="button is-link is-outlined is-fullwidth">
+                                <button id="reqSubmit" class="button is-link is-outlined is-fullwidth">
                                     Submit
                                 </button>
                             </div>
@@ -80,22 +83,63 @@
             </div>
             <div class="tile is-parent">
                 <div class="tile is-child box" id="tileContent">
-                    <div class="card" id="card">
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-content" id="pantryContent">
-                                    <p class="title is-4" id="title">Confirmation</p>
-                                    <P style="text-align: center">All products $5.00 per bottle.</P>
-                                </div>
-                            </div>
 
-                            <div class="content" id="mealContent">
-                                <p id="pantryList"></p>
-                            </div>
+                    <nav class="panel" id="card">
+                        <div class="panel-block">
+                            <h1 id="title">Confirmation</h1>
                         </div>
-                    </div>
+
+                        <p id="preferenceList">
+                            <label id="herbCount" class="panel-block">
+                        
+                                Herbal Essence
+                            </label>
+                            <label id="doveCount" class="panel-block">
+                                
+                                Dove
+                            </label>
+                            <label id="tresCount" class="panel-block">
+                              
+                                Tresemme
+                            </label>
+                            <label id="lorCount" class="panel-block">
+                        
+                                Loreal
+                            </label>
+                            <label id="pantCount" class="panel-block">
+                              
+                                pantene
+                            </label>
+                            <label id="hdCount" class="panel-block">
+                               
+                                Head & Shoulder
+                            </label>
+                            <label id="garnCount" class="panel-block">
+                               
+                                Garnier
+                            </label>
+                            <label id="bioCount" class="panel-block">
+                               
+                                Biolage
+                            </label>
+                            <label id="nexCount" class="panel-block">
+                              
+                                Nexxus
+                            </label>
+                            <label id="joCount" class="panel-block">
+                             
+                                Joico
+                            </label>
+                            <button id="reqSubmit" class="button is-link is-outlined is-fullwidth">
+                                Confirm Purchase
+                            </button>
+                        </p>
+                    </nav>
+
+
                 </div>
             </div>
+        </div>
         </div>
 
     </section>
@@ -103,6 +147,21 @@
     <footer id="sticky">
         Copyright @ Homework Bamazon 2019
     </footer>
+
+    <script class="javascript">
+
+        $(document).ready(function () {
+
+            $("reqSubmit").on("click", function () {
+                $("#herbCount").append($("#herbReq").val()+"Herbal Essence")
+                console.log($("#herbReq").val()+"Herbal Essence")
+            })
+
+
+        });
+
+    </script>
+
 
 </body>
 

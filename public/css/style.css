@@ -18,6 +18,11 @@
 }
 
 
+#price {
+    font-size: 0.4em;
+    text-align: center;
+}
+
 #pantryList {
     max-height: 59vh;
     background: rgba(255, 255, 255, 0.1);
