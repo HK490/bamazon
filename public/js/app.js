@@ -63,9 +63,13 @@ $(document).ready(function () {
     })
 
 
-    $.get("/home", function(req,res) {
-        res.json();
-        console.log(res.json())
+    $.get("/home", function(data) {
+        res.send(data);
+        console.log(data)
+    })
+
+    $.post("/home", function(data) {
+        res.json(data)
     })
 
 });

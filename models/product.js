@@ -13,8 +13,8 @@ module.exports = function (sequelize, DataTypes) {
 
    
 
-    Product.associate = function (models) {
+    // Product.associate = function (models) {
 
-    };
+    // };
     return Product;
 };
